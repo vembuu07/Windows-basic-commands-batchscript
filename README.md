@@ -1,106 +1,41 @@
 # Windows-basic-commands-batchscript
 Ex08-Windows-basic-commands-batchscript
 
-Name : Vembarasan P
-
-Reg No : 212223220123
+# NAME: Vembarasan
+# REG NO: 212223220123 
 
 # AIM:
-To execute Windows basic commands and batch scripting
+To execute Windows basic commands and batch scripting.
 
-# DESIGN STEPS:
-
-### Step 1:
-
-Navigate to any Windows environment installed on the system or installed inside a virtual environment like virtual box/vmware 
-
-### Step 2:
-
-Write the Windows commands / batch file
-Save each script in a file with a .bat extension.
-Ensure you have the necessary permissions to perform the operations.
-Adapt paths as needed based on your system configuration.
-### Step 3:
-
-Execute the necessary commands/batch file for the desired output. 
-
-
-
-
-# WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
 Create a directory named "MyLab" on the desktop.
 
 
-## COMMAND AND OUTPUT
-mkdir %userprofile%\Desktop\MyLab
-![image](https://github.com/Aaron-0111/Windows-basic-commands-batchscript/assets/149347631/e95d419b-e1e0-46e4-b15a-526b5e311bd7)
-
+# COMMAND AND OUTPUT
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
+![image](https://github.com/23006860/Windows-basic-commands-batchscript/assets/139841752/e257ddff-c855-4bea-989f-28d62073bf50)
 
 
-## COMMAND AND OUTPUT
-cd %userprofile%\Desktop\MyLab
-
-![image](https://github.com/Aaron-0111/Windows-basic-commands-batchscript/assets/149347631/696b13b0-15a4-4eee-b1a9-42f7d7f0178c)
-![image](https://github.com/Aaron-0111/Windows-basic-commands-batchscript/assets/149347631/bfd7435b-0d86-405e-a12a-26f3db05c13c)
+# COMMAND AND OUTPUT
 
 List the contents of the "MyLab" directory.
 
+![image](https://github.com/23006860/Windows-basic-commands-batchscript/assets/139841752/081e873c-b384-47d0-98eb-93e3acef7c12)
 
-## COMMAND AND OUTPUT
-dir %userprofile%\Desktop\MyLab
 
-![image](https://github.com/Aaron-0111/Windows-basic-commands-batchscript/assets/149347631/b4ac4df6-a5a8-4111-a724-d0790156e9f0)
+# COMMAND AND OUTPUT
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 
-## COMMAND AND OUTPUT
-mkdir %userprofile%\Desktop\Backup
+![image](https://github.com/23006860/Windows-basic-commands-batchscript/assets/139841752/6ebd558a-0af9-457a-80ce-74f397d059af)
 
-copy MyFile.txt %userprofile%\Desktop\Backup
-
-![image](https://github.com/Aaron-0111/Windows-basic-commands-batchscript/assets/149347631/2f32ee2c-a44a-4c2e-85c7-51782fec0ad8)
-![image](https://github.com/Aaron-0111/Windows-basic-commands-batchscript/assets/149347631/5e32ab54-ab74-4bc0-9368-c9c08a21d276)
+# COMMAND AND OUTPUT
 
 Move the "MyLab" directory to the "Documents" folder.
 
+![image](https://github.com/23006860/Windows-basic-commands-batchscript/assets/139841752/1b06ecf4-8277-487f-80dc-6d38c59d640f)
 
-## COMMAND AND OUTPUT
-mv Myfile.txt %userprofile%\Documents
-![image](https://github.com/Aaron-0111/Windows-basic-commands-batchscript/assets/149347631/244dd6b7-8a61-4a1b-8a00-086fc2c61ee6)
-
-
-## Exercise 2: Advanced Batch Scripting
-Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
-```
-@echo off
-mkdir %userprofile%\Desktop\DocBackup
-copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
-echo Backup completed successfully!
-```
-Modify the script to delete files with the ".docx" extension from the "Documents" folder after creating the backup.
-```
-@echo off
-mkdir %userprofile%\Desktop\DocBackup
-copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
-del %userprofile%\Documents\*.docx
-echo Backup and deletion completed successfully!
-```
-
-
-
-
-
-
-
-## OUTPUT
-
-![OS8](https://github.com/user-attachments/assets/5ac37331-b815-424e-853c-c964b67d7685)
-
-
-
-
+![image](https://github.com/23006860/Windows-basic-commands-batchscript/assets/139841752/757c149e-9afa-411d-8c7d-ded1f3187e67)
 
 # RESULT:
 The commands/batch files are executed successfully.
